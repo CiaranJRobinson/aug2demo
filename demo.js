@@ -58,10 +58,15 @@ class Dog {
         this.name = name;
         this.breed = breed;
         this.age = age;
+        this.isCute = true;
     }
 
     greeting(){
         console.log(`Hello, my name is ${this.name} and I am ${this.age} years old. My breed is ${this.breed}.`);
     }
 }
+
+const kumo = new Dog("Kumo", "Shiba Inu", 1);
+console.log(kumo);
+kumo.greeting();
 
