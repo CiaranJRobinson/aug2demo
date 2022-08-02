@@ -70,3 +70,14 @@ const kumo = new Dog("Kumo", "Shiba Inu", 1);
 console.log(kumo);
 kumo.greeting();
 
+// Now lets tackle class extension using puppies!
+class Puppy extends Dog {
+    constructor(name, breed, age, isTeething){
+        super(name, breed, age);
+
+        this.isTeething = isTeething;
+    }
+}
+
+const fluffy = new Puppy("Fluffy", "Poodle", 13, true);
+console.log(fluffy);
